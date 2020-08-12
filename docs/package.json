@@ -5,9 +5,9 @@
   "author": "Jared Palmer <jared@palmer.net>",
   "license": "MIT",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "index-docs": "node ./.next/serverless/scripts/index-docs.js"
   },
   "dependencies": {
