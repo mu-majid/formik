@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "lerna": "lerna",
-    "dev": "lerna run start --stream --parallel",
+    "dev": "node api.js && lerna run start --stream --parallel",
     "test": "lerna run test --",
     "build": "lerna run build",
     "prepublish": "lerna run prepublish",
@@ -20,7 +20,7 @@
     "git-reset": "git reset --hard HEAD",
     "git-clean": "git clean -d -x -e node_modules -e packages -f",
     "now-build": "npm run build-website",
-    "start-website": "cd website && yarn start",
+    "start-website": "node api.js && cd website && yarn start",
     "build-website": "cd website && yarn install && yarn build"
   },
   "prettier": {
