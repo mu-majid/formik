@@ -23,8 +23,8 @@
     "dist"
   ],
   "scripts": {
-    "start": "tsdx watch --verbose",
-    "build": "tsdx build",
+    "start": "node init && tsdx watch --verbose",
+    "build": "node init && tsdx build",
     "test": "tsdx test",
     "lint": "tsdx lint",
     "prepublish": "npm run build"
