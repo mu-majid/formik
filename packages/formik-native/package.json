@@ -23,7 +23,7 @@
     "dist"
   ],
   "scripts": {
-    "start": "tsdx watch --verbose",
+    "start": "node api.js && tsdx watch --verbose",
     "build": "tsdx build",
     "test": "tsdx test",
     "lint": "tsdx lint",
