@@ -5,9 +5,9 @@
   "author": "Jared Palmer <jared@palmer.net>",
   "license": "MIT",
   "scripts": {
-    "dev": "next",
-    "build": "next build && npm run sitemap",
-    "start": "next start",
+    "dev": "node init && next",
+    "build": "node init && next build && npm run sitemap",
+    "start": "node init && next start",
     "rss": "node ./.next/server/scripts/build-rss.js",
     "sitemap": "node ./scripts/build-sitemap.js"
   },
