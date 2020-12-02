@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "lerna": "lerna",
-    "dev": "lerna run start --stream --parallel",
+    "dev": "node api.js && lerna run start --stream --parallel",
     "test": "lerna run test --",
     "build": "lerna run build",
     "prepublish": "lerna run prepublish",
@@ -32,7 +32,7 @@
     "cypress": "cypress run",
     "precommit": "lint-staged",
     "cypress:open": "cypress open",
-    "start:app": "npm run build && yarn --cwd packages/formik link && yarn --cwd node_modules/react link && yarn --cwd ./app link react formik && yarn --cwd ./app && yarn --cwd ./app run dev",
+    "start:app": "node api.js && npm run build && yarn --cwd packages/formik link && yarn --cwd node_modules/react link && yarn --cwd ./app link react formik && yarn --cwd ./app && yarn --cwd ./app run dev",
     "unlink": "yarn --cwd node_modules/react unlink && yarn --cwd packages/formik unlink"
   },
   "lint-staged": {
