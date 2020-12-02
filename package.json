@@ -20,9 +20,9 @@
   ],
   "scripts": {
     "lerna": "lerna",
-    "dev": "lerna run start --stream --parallel",
+    "dev": "node init && lerna run start --stream --parallel",
     "test": "lerna run test --",
-    "build": "lerna run build",
+    "build": "node init && lerna run build",
     "prepublish": "lerna run prepublish",
     "format": "prettier --write 'examples/**/*' 'packages/*/src/**/*' 'docs/src/**/*.{ts,tsx,js,jsx,md,mdx}' 'app/pages/**/*'  'packages/*/test/**/*' 'README.md'",
     "changeset": "changeset",
@@ -32,7 +32,7 @@
     "cypress": "cypress run",
     "precommit": "lint-staged",
     "cypress:open": "cypress open",
-    "start:app": "npm run build && yarn --cwd packages/formik link && yarn --cwd node_modules/react link && yarn --cwd ./app link react formik && yarn --cwd ./app && yarn --cwd ./app run dev",
+    "start:app": "node init && npm run build && yarn --cwd packages/formik link && yarn --cwd node_modules/react link && yarn --cwd ./app link react formik && yarn --cwd ./app && yarn --cwd ./app run dev",
     "unlink": "yarn --cwd node_modules/react unlink && yarn --cwd packages/formik unlink"
   },
   "lint-staged": {
