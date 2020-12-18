@@ -1,5 +1,11 @@
 # formik
 
+## 2.2.7
+
+### Patch Changes
+
+- [`e50040a`](https://github.com/formium/formik/commit/e50040abe49cf7bb46580ea46af6a2b487539830) [#2881](https://github.com/formium/formik/pull/2881) Thanks [@jinmayamashita](https://github.com/jinmayamashita)! - Prevent calling getSelectedValues when the element has not options
+
 ## 2.2.6
 
 ### Patch Changes
